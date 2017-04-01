@@ -188,7 +188,7 @@ else
     }
 }
 
-header("Content-Type: text/xml");
+header("Content-Type: text/xml; charset=utf-8");
 //header("Access-Control-Allow-Origin: *");
 
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>".

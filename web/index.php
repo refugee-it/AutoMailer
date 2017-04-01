@@ -69,7 +69,8 @@ if (isset($_POST['name']) !== true ||
         if (isset($_SESSION['user_id']) === true)
         {
             echo "      <p>\n".
-                 "        <a href=\"client.php\">Client</a>\n".
+                 "        <a href=\"client.php\">Client</a><br/>\n".
+                 "        <a href=\"protocol.php\">Protocol</a><br/>\n".
                  "      </p>\n".
                  "      <form action=\"index.php\" method=\"post\">\n".
                  "        <fieldset>\n".
@@ -159,7 +160,7 @@ else
             $_SESSION['user_name'] = $_POST['name'];
 
             echo "      <p>\n".
-                 "        Login successful. <a href=\"client.php\">Continue</a>\n".
+                 "        Login successful. <a href=\"index.php\">Continue</a>\n".
                  "      </p>\n".
                  "    </div>\n".
                  "  </body>\n".

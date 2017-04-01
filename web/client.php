@@ -32,7 +32,7 @@ if (isset($_SESSION['user_id']) !== true)
     exit(-1);
 }
 
-header("Content-Type: application/xhtml+xml");
+header("Content-Type: application/xhtml+xml; charset=utf-8");
 
 echo "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n".
      "<!DOCTYPE html\n".

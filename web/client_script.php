@@ -53,7 +53,7 @@ else
 
 
 
-header("Content-Type: application/javascript");
+header("Content-Type: application/javascript; charset=utf-8");
 
 echo
 "/* Copyright (C) 2012-2017 Stephan Kreutzer\n".
@@ -91,12 +91,12 @@ echo
 "    if (xmlhttp == null)\n".
 "    {\n".
 "        alert('No HTTP request object.');\n".
-"        return;\n".        
+"        return;\n".
 "    }\n".
 "\n".
 "    xmlhttp.open('POST', '".CORS_HOST."', true);\n".
 "    xmlhttp.setRequestHeader('Content-Type',\n".
-"                             'application/x-www-form-urlencoded');\n".
+"                             'application/x-www-form-urlencoded; charset=utf-8');\n".
 "    xmlhttp.onreadystatechange = response;\n".
 "    xmlhttp.send();\n".
 "}\n".
