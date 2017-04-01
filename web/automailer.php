@@ -157,7 +157,8 @@ if ($success === true)
     $mailer->setFrom("no-reply@example.org", "NoReply");
     $mailer->addAddress($addressee['e_mail']);
 
-    $mailer->CharSet = "UTF-8";
+    $mailer->CharSet = "utf-8";
+    $mailer->Encoding = "base64";
     $mailer->Subject = "Message Subject";
     $mailer->isHTML(false);
     $mailer->Body = $message;
