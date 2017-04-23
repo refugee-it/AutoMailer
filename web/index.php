@@ -156,6 +156,9 @@ else
 
         if ($user[0]['password'] === hash('sha512', $user[0]['salt'].$_POST['password']))
         {
+            $_SESSION = array();
+
+            $_SESSION['instance_path'] = dirname(__FILE__);
             $_SESSION['user_id'] = (int)$user[0]['id'];
             $_SESSION['user_name'] = $_POST['name'];
 
